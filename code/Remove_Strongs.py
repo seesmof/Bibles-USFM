@@ -29,17 +29,20 @@ def Remove_Strongs(Directory):
                     Current_File.write(Modified_Content)
 
 
-Current_Directory = os.path.dirname(os.path.abspath(__file__))
-Bibles_Directory = os.path.join(Current_Directory, "..", "Bibles")
-for Root, Dirs, Files in os.walk(Bibles_Directory):
-    for Directory in Dirs:
-        Directory_Path = os.path.join(Root, Directory)
+def Run_Through_Bibles():
+    Current_Directory = os.path.dirname(os.path.abspath(__file__))
+    Bibles_Directory = os.path.join(Current_Directory, "..", "Bibles")
+    for Root, Dirs, Files in os.walk(Bibles_Directory):
+        for Directory in Dirs:
+            Directory_Path = os.path.join(Root, Directory)
 
-        First_USFM_File = os.path.join(Directory_Path, os.listdir(Directory_Path)[0])
-        with open(First_USFM_File, "r", encoding="utf-8") as Current_File:
-            File_Content = Current_File.read()
-        if "|strong=" not in File_Content:
-            continue
+            First_USFM_File = os.path.join(
+                Directory_Path, os.listdir(Directory_Path)[0]
+            )
+            with open(First_USFM_File, "r", encoding="utf-8") as Current_File:
+                File_Content = Current_File.read()
+            if "|strong=" not in File_Content:
+                continue
 
-        with console.status(f"Working on {Directory}..."):
-            Remove_Strongs(Directory_Path)
+            with console.status(f"Working on {Directory}..."):
+                Remove_Strongs(Directory_Path)
