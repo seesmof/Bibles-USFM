@@ -1,6 +1,10 @@
 <div align="center">
-  <img src="./images/cover.png" alt="Bibles USFM cover" width="333"/>
+  <img src="./images/cover.png" alt="Bibles USFM cover" width="477"/>
 </div>
+
+Contains some Bibles in USFM format for the glory of Jesus Christ our Holy Lord GOD Almighty ✝️💝🙏
+
+All the Bibles were taken from [eBible](https://eBible.org/find/), and all of them are in Public Domain (which i believe all Bible translations should be) ✝️💟🙏
 
 **Repository Folder Structure**
 
