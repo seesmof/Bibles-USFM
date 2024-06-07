@@ -37,7 +37,7 @@ def Run_Through_Bibles():
             Directory_Path = os.path.join(Root, Directory)
 
             First_USFM_File = os.path.join(
-                Directory_Path, os.listdir(Directory_Path)[0]
+                Directory_Path, os.listdir(Directory_Path)[3]
             )
             with open(First_USFM_File, "r", encoding="utf-8") as Current_File:
                 File_Content = Current_File.read()
@@ -46,3 +46,6 @@ def Run_Through_Bibles():
 
             with console.status(f"Working on {Directory}..."):
                 Remove_Strongs(Directory_Path)
+
+
+Run_Through_Bibles()
