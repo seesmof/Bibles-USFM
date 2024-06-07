@@ -5,6 +5,7 @@ import re
 def Remove_Strongs(Directory):
     for Root, Dirs, Files in os.walk(Directory):
         for File_Name in Files:
+            print(File_Name)
             File_Path = os.path.join(Root, File_Name)
 
             with open(File_Path, "r", encoding="utf-8") as Current_File:
