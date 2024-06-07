@@ -4,7 +4,9 @@
 
 Contains some Bibles in USFM format for the glory of Jesus Christ our Holy Lord GOD Almighty ✝️💝🙏
 
-All the Bibles were taken from [eBible](https://eBible.org/find/), and all of them are in Public Domain (which i believe all Bible translations should be) ✝️💟🙏
+All the Bibles were taken from [eBible](https://eBible.org/find/), a little tweak that was made to all of them is the Strong's numbers were removed everywhere ✝️💖📿
+
+All of them are in Public Domain (which i believe all Bible translations should be) ✝️💟🙏
 
 **Repository Folder Structure**
 
